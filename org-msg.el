@@ -1488,7 +1488,6 @@ HTML emails."
 
 (defun org-msg-edit-mode-mu4e ()
   "Setup mu4e faces, addresses completion and run mu4e."
-  (mu4e~compose-remap-faces)
   (unless (mu4e-running-p)
     (if (fboundp #'mu4e~start) (mu4e~start) (mu4e--start)))
   (when mu4e-compose-complete-addresses
